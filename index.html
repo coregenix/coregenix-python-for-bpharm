@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python for B.Pharm – COREGENIX</title>
+<meta name="description" content="Free interactive Python course for B.Pharm students. Run real Python in your browser with pharmacy examples. Made by Sant Kumar, COREGENIX.">
+<meta name="author" content="Sant Kumar (COREGENIX)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button id="menuBtn" class="icon-btn" aria-label="Open lesson menu">☰</button>
+  <a class="brand" href="#/home">
+    <span class="brand-logo">💊</span>
+    <span class="brand-text"><b>Python for B.Pharm</b><small>by COREGENIX</small></span>
+  </a>
+  <nav class="topnav">
+    <a href="#/home" data-nav="home">Home</a>
+    <a href="#/playground" data-nav="playground">Playground</a>
+    <a href="#/progress" data-nav="progress">My Progress</a>
+  </nav>
+  <div class="xpbox" title="Your experience points">
+    <span class="xp-level" id="xpLevel">Lv 1</span>
+    <span class="xp-bar"><i id="xpFill"></i></span>
+    <span class="xp-num" id="xpNum">0 XP</span>
+  </div>
+</header>
+
+<div class="layout">
+  <aside id="sidebar" class="sidebar" aria-label="Lessons"></aside>
+  <div id="scrim" class="scrim"></div>
+  <main id="main" class="main" tabindex="-1"></main>
+</div>
+
+<footer class="footer">
+  <div>
+    <b>COREGENIX</b> · Made by <b>Sant Kumar</b> ·
+    <a href="mailto:coregenix@rediffmail.com">coregenix@rediffmail.com</a>
+  </div>
+  <div class="muted">Free, open-source learning project for B.Pharm students. Educational use only – not for clinical decisions.</div>
+</footer>
+
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<canvas id="confetti"></canvas>
+
+<noscript><p style="padding:2rem">This website needs JavaScript to run Python in your browser.</p></noscript>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="assets/runner.js"></script>
+<script src="assets/lessons.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
